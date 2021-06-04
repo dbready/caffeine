@@ -1,0 +1,11 @@
+[package]
+name = "caffeine"
+version = "0.1.0"
+authors = ["Damien Ready <dbready@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+autopilot = "0.4.0"
+gumdrop = "0.8.0"
