@@ -8,6 +8,9 @@ struct ConfigOptions {
     #[options(help = "delay in milliseconds between mouse movements")]
     delay: Option<u64>,
 
+    #[options(help = "print help")]
+    help: bool,
+
     #[options(help = "seconds to sleep before looping the program")]
     sleep: Option<u32>,
 
