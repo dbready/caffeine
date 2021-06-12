@@ -16,6 +16,9 @@ struct ConfigOptions {
 
     #[options(help = "movement distance in pixels")]
     pixels: Option<f64>,
+
+    #[options(help = "verbose mode")]
+    verbose: bool,
 }
 
 fn mouse_move(delay: u64, pixels: f64) {
@@ -62,6 +65,9 @@ fn main() {
         // loop forever
         loop {
             mouse_move(delay, pixels);
+            if opts.verbose {
+                eprintln!("*twitch*");
+            }
             thread::sleep(Duration::from_millis(sleep_ms as u64))
         }
     }
